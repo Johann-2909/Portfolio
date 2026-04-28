@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johann Balzereit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header id="header">
+        <h2 id="name">Johann Balzereit</h2>
+        <section id="links-section">
+            <a class="link" href="#home" data-i18n="nav.home">Home</a>
+            <a class="link" href="#about" data-i18n="nav.about">About</a>
+            <a class="link" href="#skills" data-i18n="nav.skills">Skills</a>
+            <a class="link" href="#projects" data-i18n="nav.projects">Projects</a>
+            <a class="link" href="#contact" data-i18n="nav.contact">Contact</a>
+            <button class="header-btn" id="lang-toggle">DE / EN</button>
+            <button class="header-btn" id="darkmode-toggle">🌙</button>
+        </section>
+    </header>
+
+    <main id="main">
+
+        <!-- HOME -->
+        <section id="home">
+            <div id="wrap">
+                <div id="content">
+                    <p class="paragraph eyebrow" data-i18n="home.eyebrow">Hi, my name is</p>
+                    <h1 id="headline" data-i18n="home.headline">
+                        Johann Balzereit.<br />I'm a Web Developer.
+                    </h1>
+                    <p class="paragraph" data-i18n="home.sub">
+                        I am a self-taught web developer from Schleswig-Holstein, Germany,
+                        focused on building clean, functional, and user-friendly web
+                        applications. I'm currently expanding my frontend skills and enjoy
+                        solving problems, improving user experiences, and learning
+                        something new every day.
+                    </p>
+                    <a href="#projects" class="btn" data-i18n="home.cta">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 class="section-headline" data-i18n="about.title">About</h2>
+            <p class="paragraph" id="introduction" data-i18n="about.intro">
+                I am a 25-year-old web developer from Germany. I found a passion in
+                working with computers. In 2024 I started coding in JavaScript — since
+                then it has become a hobby that I take seriously every day.
+            </p>
+
+            <div class="tech-cards">
+                <div class="tech-card">
+                    <img src="js-logo.png" alt="JavaScript" />
+                    <div class="overlay">
+                        <span class="label" data-i18n="cards.view">View Code</span>
+                        <a href="/projects/js.html" class="btn" data-i18n="cards.visit">Visit now</a>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img src="react-logo.png" alt="React" />
+                    <div class="overlay">
+                        <span class="label" data-i18n="cards.view">View Code</span>
+                        <a href="/projects/react.html" class="btn" data-i18n="cards.visit">Visit now</a>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <img src="html-css-logo.png" alt="HTML &amp; CSS" />
+                    <div class="overlay">
+                        <span class="label" data-i18n="cards.view">View Code</span>
+                        <a href="/projects/html-css.html" class="btn" data-i18n="cards.visit">Visit now</a>
+                    </div>
+                </div>
+            </div>
+            <p class="paragraph" data-i18n="about.available">
+                I'm currently looking for my first job in web development.
+                Feel free to reach out!
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <div class="skills-inner">
+                <h2 class="section-headline" data-i18n="skills.title">Skills</h2>
+                <div class="skills-grid">
+
+                    <div class="skill-group">
+                        <h3 class="skill-group-title" data-i18n="skills.frontend">Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="skill-group-title" data-i18n="skills.tools">Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">npm</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <section id="projects">
+            <h2 class="section-headline" data-i18n="projects.title">Projects</h2>
+            <p class="paragraph section-sub" data-i18n="projects.sub">
+                A selection of things I have built. More coming soon.
+            </p>
+            <div class="projects-grid">
+
+                <!-- PROJECT CARD TEMPLATE — duplicate and fill in your own data -->
+                <article class="project-card">
+                    <div class="project-preview">
+                        <!-- Replace src with a screenshot of your project -->
+                        <img src="" alt="Project preview" class="project-img" />
+                        <div class="project-preview-placeholder">
+                            <span>&lt;/&gt;</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title" data-i18n="projects.p1.title">Project Title</h3>
+                        <p class="project-desc" data-i18n="projects.p1.desc">
+                            Short description of what this project does and what you learned.
+                        </p>
+                        <div class="project-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn" target="_blank" rel="noopener" data-i18n="projects.live">Live
+                                Demo</a>
+                            <a href="#" class="btn btn-outline" target="_blank" rel="noopener"
+                                data-i18n="projects.code">Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Add more project cards here -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="footer">
+        <section id="contact">
+            <h2 class="section-headline" data-i18n="contact.title">Contact</h2>
+            <p class="paragraph" data-i18n="contact.sub">
+                Have a project in mind or just want to say hi? Send me a message.
+            </p>
+
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="cf-name" data-i18n="contact.name">Name</label>
+                    <input type="text" id="cf-name" name="name" autocomplete="name" required
+                        placeholder="Max Mustermann" />
+                </div>
+                <div class="form-group">
+                    <label for="cf-email" data-i18n="contact.email">E-Mail</label>
+                    <input type="email" id="cf-email" name="email" autocomplete="email" required
+                        placeholder="max@beispiel.de" />
+                </div>
+                <div class="form-group">
+                    <label for="cf-msg" data-i18n="contact.message">Message</label>
+                    <textarea id="cf-msg" name="message" rows="5" required
+                        placeholder="Hi Johann, I'd love to work with you…"></textarea>
+                </div>
+                <button type="submit" class="btn" id="submit-btn" data-i18n="contact.send">Send Message</button>
+                <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+            </form>
+
+            <div class="socials">
+                <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link"
+                    aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M20.447 20.452H17.01v-5.569c0-1.328-.024-3.037-1.852-3.037-1.854 0-2.137 1.446-2.137 2.94v5.666H9.585V9h3.29v1.561h.046c.458-.869 1.577-1.784 3.246-1.784 3.473 0 4.113 2.286 4.113 5.26v6.415zM5.337 7.433a1.91 1.91 0 1 1 0-3.82 1.91 1.91 0 0 1 0 3.82zm1.648 13.019H3.69V9h3.295v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Johann Balzereit</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
