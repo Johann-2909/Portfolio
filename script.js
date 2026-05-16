@@ -2,6 +2,7 @@
    Dark Mode
    =========================== */
 const darkmodeButton = document.getElementById("darkmode-toggle");
+emailjs.init("zT0Wff_XddS3LM8gi")
 
 if (darkmodeButton) {
     darkmodeButton.addEventListener("click", () => {
@@ -41,8 +42,12 @@ const translations = {
         "skills.tools": "Tools & Others",
         "projects.title": "Projects",
         "projects.sub": "A selection of things I have built. More coming soon.",
-        "projects.p1.title": "Project Title",
-        "projects.p1.desc": "Short description of what this project does and what you learned.",
+        "projects.p1.title": "Pokedex",
+        "projects.p1.desc": "In this project, I used vanilla JavaScript, DOM manipulation, asynchronous API communication with async/await, as well as CSS Grid and Flexbox to develop a complete Pokédex featuring a search function, type filter, detail page, and Shiny toggle, and deployed it to GitHub Pages.",
+        "projects.p2.title": "Kanban Board",
+        "projects.p2.desc": "In this project, I built a fully functional Kanban Board using React, Vite, and the @hello-pangea/dnd library, implementing drag and drop between columns, task management with LocalStorage persistence, and a clean component-based architecture with props, state, and hooks.",
+        "projects.p3.title": "Project 3",
+        "projects.p3.desc": "Description for Project 3.",
         "projects.live": "Live Demo",
         "projects.code": "Code",
         "contact.title": "Contact",
@@ -72,8 +77,12 @@ const translations = {
         "skills.tools": "Tools & Sonstiges",
         "projects.title": "Projekte",
         "projects.sub": "Eine Auswahl meiner Projekte. Mehr folgt bald.",
-        "projects.p1.title": "Projekttitel",
-        "projects.p1.desc": "Kurze Beschreibung des Projekts und was du dabei gelernt hast.",
+        "projects.p1.title": "Pokedex",
+        "projects.p1.desc": "In diesem Projekt habe ich Vanilla JavaScript, DOM-Manipulation, asynchrone API-Kommunikation mit async/await sowie CSS Grid und Flexbox angewendet, um einen vollständigen Pokédex mit Suchfunktion, Typfilter, Detailseite und Shiny-Toggle zu entwickeln und auf GitHub Pages zu deployen.",
+        "projects.p2.title": "Kanban Board",
+        "projects.p2.desc": "In diesem Projekt habe ich React, Vite und die @hello-pangea/dnd-Bibliothek verwendet, um ein vollständiges Kanban-Board mit Drag-and-Drop-Interface, Aufgabenmanagement und responsivem Design zu entwickeln und auf GitHub Pages zu deployen.",
+        "projects.p3.title": "Project 3",
+        "projects.p3.desc": "Description for Project 3.",
         "projects.live": "Live-Demo",
         "projects.code": "Code",
         "contact.title": "Kontakt",
@@ -158,17 +167,16 @@ if (form) {
         submitBtn.textContent =
             currentLang === "de" ? "Wird gesendet…" : "Sending…";
 
-        setTimeout(() => {
-            feedback.textContent =
-                currentLang === "de"
-                    ? "✅ Nachricht gesendet! Ich melde mich bald."
-                    : "✅ Message sent! I'll get back to you soon.";
-            feedback.className = "form-feedback success";
-            form.reset();
-            submitBtn.disabled = false;
-            submitBtn.textContent =
-                currentLang === "de" ? "Nachricht senden" : "Send Message";
-        }, 1200);
+        emailjs.sendForm("service_8pd0j4y", "template_04pf66a", form)
+            .then(() => {
+                feedback.textContent = "✅ Message sent!"
+                form.reset()
+                submitBtn.disabled = false
+            })
+            .catch(() => {
+                feedback.textContent = "❌ Something went wrong."
+                submitBtn.disabled = false
+            })
     });
 }
 
