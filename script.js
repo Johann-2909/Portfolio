@@ -19,7 +19,7 @@ if (localStorage.getItem("darkmode") === "true") {
 }
 
 /* ===========================
-   i18n — DE / EN Toggle
+   DE / EN Toggle Wechselt halt die Sprache.
    =========================== */
 const translations = {
     en: {
@@ -46,8 +46,8 @@ const translations = {
         "projects.p1.desc": "In this project, I used vanilla JavaScript, DOM manipulation, asynchronous API communication with async/await, as well as CSS Grid and Flexbox to develop a complete Pokédex featuring a search function, type filter, detail page, and Shiny toggle, and deployed it to GitHub Pages.",
         "projects.p2.title": "Kanban Board",
         "projects.p2.desc": "In this project, I built a fully functional Kanban Board using React, Vite, and the @hello-pangea/dnd library, implementing drag and drop between columns, task management with LocalStorage persistence, and a clean component-based architecture with props, state, and hooks.",
-        "projects.p3.title": "Project 3",
-        "projects.p3.desc": "Description for Project 3.",
+        "projects.p3.title": "Nexus Admin",
+        "projects.p3.desc": "In this project, I built a fully functional E-Commerce Admin Panel using React, Vite, and Tailwind CSS, featuring a dashboard with KPI statistics and a weekly revenue chart built with Recharts, a product table, and an order management page with dynamic status badges. The project demonstrates React Router for multi-page navigation, component-based architecture, and responsive design with Tailwind CSS utility classes.",
         "projects.live": "Live Demo",
         "projects.code": "Code",
         "contact.title": "Contact",
@@ -81,8 +81,8 @@ const translations = {
         "projects.p1.desc": "In diesem Projekt habe ich Vanilla JavaScript, DOM-Manipulation, asynchrone API-Kommunikation mit async/await sowie CSS Grid und Flexbox angewendet, um einen vollständigen Pokédex mit Suchfunktion, Typfilter, Detailseite und Shiny-Toggle zu entwickeln und auf GitHub Pages zu deployen.",
         "projects.p2.title": "Kanban Board",
         "projects.p2.desc": "In diesem Projekt habe ich React, Vite und die @hello-pangea/dnd-Bibliothek verwendet, um ein vollständiges Kanban-Board mit Drag-and-Drop-Interface, Aufgabenmanagement und responsivem Design zu entwickeln und auf GitHub Pages zu deployen.",
-        "projects.p3.title": "Project 3",
-        "projects.p3.desc": "Description for Project 3.",
+        "projects.p3.title": "Nexus Admin",
+        "projects.p3.desc": "In diesem Projekt habe ich ein vollständiges E-Commerce Admin Panel mit React, Vite und Tailwind CSS entwickelt, das ein Dashboard mit KPI-Statistiken und einem Wochenumsatz-Diagramm mit Recharts, eine Produkttabelle sowie eine Bestellübersicht mit dynamischen Status-Badges umfasst. Das Projekt demonstriert React Router für die Mehrseiten-Navigation, komponentenbasierte Architektur und responsives Design mit Tailwind CSS.",
         "projects.live": "Live-Demo",
         "projects.code": "Code",
         "contact.title": "Kontakt",
