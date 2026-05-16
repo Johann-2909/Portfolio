@@ -93,7 +93,6 @@ function applyTranslations(lang) {
         const val = translations[lang][key];
         if (val !== undefined) {
             if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
-                // don't translate inputs
             } else {
                 el.innerHTML = val;
             }
@@ -155,7 +154,6 @@ if (form) {
             return;
         }
 
-        // — Replace this block with your actual form submission (e.g. Formspree, EmailJS) —
         submitBtn.disabled = true;
         submitBtn.textContent =
             currentLang === "de" ? "Wird gesendet…" : "Sending…";
@@ -171,7 +169,6 @@ if (form) {
             submitBtn.textContent =
                 currentLang === "de" ? "Nachricht senden" : "Send Message";
         }, 1200);
-        // — end form submission block —
     });
 }
 
@@ -189,7 +186,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 /* ===========================
-   Scroll-reveal (simple)
+   Scroll-reveal simple
    =========================== */
 const revealEls = document.querySelectorAll(
     ".project-card, .tech-card, .skill-group, .skill-bar-fill"
